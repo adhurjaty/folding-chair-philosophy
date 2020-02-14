@@ -13,9 +13,10 @@ const Header: React.SFC<HeaderProps> = ({ siteTitle }) => (
         marginBottom: '1.45rem',
         }}>
         <Menu>
-            <a id="home" className="menu-item" href="/">Home</a>
-            <a id="about" className="menu-item" href="/about">About</a>
-            <a id="contact" className="menu-item" href="/contact">Contact</a>
+            <Link className="menu-item" to="/">Blog</Link>
+            <Link className="menu-item" to="/about">About</Link>
+            <Link className="menu-item" to="/contact">Links</Link>
+            <Link className="menu-item" to="/projects">Projects</Link>
         </Menu>
         <div
         style={{
